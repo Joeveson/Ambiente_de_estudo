@@ -2,4 +2,4 @@
 
 nome = str(input('Informe o Nome da Pessoa:').upper().strip())
 compara = 'SILVA' in nome
-print (f'O nome informado foi {nome}.\nO nome tem a palavra SILVA? {compara}')
+print (f'O nome informado foi {nome}.\nO nome tem a SILVA? {compara}')
