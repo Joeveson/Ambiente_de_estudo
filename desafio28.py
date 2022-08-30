@@ -5,7 +5,7 @@ import random
 valor = [0, 1 , 2 , 3 , 4 , 5]
 pensar = random.choice(valor)
 valorinformado = int(input('Informe um número inteiro de 0 a 5: '))
-if valor == valorinformado:
-    print (f'O número informado foi {pensar}.Você venceu o Programa!!!')
+if pensar == valorinformado:
+    print (f' O número informado foi {pensar}.\nVocê venceu o Programa!!!')
 else:
-    print (f'O número informado foi {pensar}. Você perdeu para o programa!!!')
+    print (f' O número informado foi {pensar}.\nVocê perdeu para o programa!!!')
