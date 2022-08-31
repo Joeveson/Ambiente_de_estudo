@@ -2,6 +2,6 @@
 
 numero = int(input('Informe um número inteiro: '))
 if numero %2 == 0:
-    print (f'Número PAR!!')
+    print (f'O Número {numero} é PAR!!')
 else:
-    print (f'Número ÍMPAR!!')
+    print (f'O Número {numero} é ÍMPAR!!')

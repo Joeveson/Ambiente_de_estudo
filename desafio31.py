@@ -3,7 +3,7 @@
 km = float(input('Informe quantos quilômetros tem sua viagem: '))
 if km <=200:
     preco = km*0.50
-    print(f' A sua viagem tem {km:.2f}km e o valor cobrado por sua rota é de {preco:.2f}R$')
+    print(f' A sua viagem tem {km:.2f}km e o valor cobrado por sua rota é de R${preco:.2f}.')
 else:
     preco = km*0.45
-    print(f' A sua viagem tem {km:.2f}km e o valor cobrado por sua rota é de {preco:.2f}R$')
+    print(f' A sua viagem tem {km:.2f}km e o valor cobrado por sua rota é de R${preco:.2f}.')
