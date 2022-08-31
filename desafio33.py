@@ -13,5 +13,5 @@ if n2<n1 and n2<n3:
     menor = n2
 if n3<n1 and n3<n2:
     menor = n3
-print (f'O maior número digitado foi {maior:.0f} ')
-print (f'O menor número digitado foi {menor:.0f}.')
+print (f'O maior número digitado foi \033[1;32;40m{maior:.0f}\033[m.')
+print (f'O menor número digitado foi \033[1;32;40m{menor:.0f}\033[m.')
