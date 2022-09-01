@@ -2,3 +2,19 @@
 # - Equilátero: todos os lados iguais
 # - Isósceles: dois lados iguais
 # - Escaleno: todos os lados diferentes
+
+print (f'-=-' * 10)
+print (f'Analisador de Triângulos')
+print (f'-=-' * 10)
+reta1= float(input('Informe a primeira reta: '))
+reta2= float(input('Informe a segunda reta: '))
+reta3= float(input('Informe a terceira reta: '))
+
+if reta1 == reta2 == reta3 == reta1:
+    print(f'\033[4;36mA Fórmula é um triângulo Equilátero!\033[m') 
+
+elif reta1 == reta2 or reta2 == reta3 or reta3 ==reta1:
+    print(f'\033[4;36mA Fórmula é um triângulo Isósceles\033[m')
+
+elif reta1 != reta2 != reta3 != reta1:
+    print(f'\033[4;36mA Fórmula é um triângulo Escaleno!\033[m')
