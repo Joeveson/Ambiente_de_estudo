@@ -10,7 +10,7 @@ print (f'A sua média foi de {med} pontos.')
 
 if med < 5.0:
     print('Você está REPROVADO!')
-if med >= 5.0 and med < 6.9:
+elif med >= 5.0 and med < 6.9:
     print('Você está de Recuperação')
-if med >= 7.0:
-    print('Você está APROVADO!')
+elif med >= 7.0:
+    print ('Parabéns! Você foi APROVADO! ')

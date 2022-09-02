@@ -10,5 +10,5 @@ if n1 > n2:
     print(f'O \033[1;32mPRIMEIRO\033[m valor é o \033[1;32mMAIOR!\033[m ')
 elif n2 > n1:
     print(f'O \033[1;32mSEGUNDO\033[m  valor é o \033[1;32mMAIOR!\033[m ')
-elif n1 == n2: 
+else: 
     print(f'Os dois valores são \033[1;32mIGUAIS!\033[m ')

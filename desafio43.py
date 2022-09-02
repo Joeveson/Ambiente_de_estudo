@@ -5,8 +5,8 @@
 # - 30 até 40: Obesidade
 # - Acima de 40: Obesidade Mórbida
 
-peso = float(input('Informe seu peso: '))
-altura = float(input('Informe sua Altura: '))
+peso = float(input('Informe seu peso (Kg): '))
+altura = float(input('Informe sua Altura (m): '))
 imc = peso/altura**2
 print (f'O IMC informado foi \033[1;33;44m{imc:.1f}\033[m')
 
@@ -24,3 +24,4 @@ elif imc == 30 or imc <40:
 
 elif imc > 40:
     print('\033[1;33mObersidade Móbida!\033[m')
+    

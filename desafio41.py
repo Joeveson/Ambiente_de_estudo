@@ -5,10 +5,10 @@
 # - Até 20 anos: SÊNIOR
 # - Acima: MASTER
 
-import datetime
+from datetime import date
 
 ano_nasc = int(input('Informe o seu Ano de nascimento: '))
-ano = datetime.date.today()
+ano = date.today()
 print (f'O ano atual é \033[1;33m{ano.year}\033[m!')
 idade_atual = ano.year - ano_nasc
 print (f'Você tem \033[1;33m{idade_atual}\033[m anos.')
