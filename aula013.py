@@ -34,8 +34,8 @@
 #     n = int(input('Digite um número: '))
 # print('FIM')
 
-s = 0
-for c in range(0,3):
-    n = int(input('Digite um número: '))
-    s = s + n
-print(f'O somatório de todos os valores foi {s}.')
+# s = 0
+# for c in range(0,3):
+#     n = int(input('Digite um número: '))
+#     s = s + n
+# print(f'O somatório de todos os valores foi {s}.')
