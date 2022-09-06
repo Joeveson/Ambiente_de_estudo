@@ -11,28 +11,24 @@ maior = 0
 h_mais_velho = 0
 
 for c in range(1, 5):
-    nome = (input('Informe o Nome: '))
-    sexo = str(input('Informe o Sexo [M] Masculino [F] Feminino: ').upper())
-    idade = int(input('Informe a Idade: '))
+    nome = (input(f'Informe o Nome da {c}ª pessoa: '))
+    sexo = str(input(f'Sexo da {c}ª pessoa \n[M] Masculino [F] Feminino: ').upper())
+    idade = int(input(f'Idade da {c}ª pessoa: '))
 
     soma = soma + idade
-    media = soma / idade
+    media = soma / 4
 
-    if sexo == 'M' and idade > maior:
+    if sexo in 'Mm' and idade > maior:
         maior = idade
         h_mais_velho = nome
-    print(h_mais_velho) 
+    if sexo in 'Ff' and idade < 20:
+        qtd_mulheres = qtd_mulheres +1  
 
-    if sexo == 'F' or idade <20:
-        qtd_mulheres = qtd_mulheres +1
-    print (qtd_mulheres)
-    
 print (f'Média das idade é de {media:.2f}.')
 print (f'Nome do homem mais velho é {h_mais_velho}.')
 
 if qtd_mulheres == 0:
     print('Não tem mulheres no grupo! ')
-
 else:
     print(f'Ao todo {qtd_mulheres} mulheres com menos de 20 anos.')
 

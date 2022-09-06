@@ -11,4 +11,4 @@ if inverte == frase:
 else:
     print('A frase não é um palídromo.')
 
-print(f'A frase que você digitou invertida fica: {inverte}')
+print(f'A frase que você digitou invertida fica da seguinte forma: {inverte}')

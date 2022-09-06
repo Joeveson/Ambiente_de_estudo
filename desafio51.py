@@ -3,5 +3,7 @@
 n = int(input('Informe um número: '))
 r = int(input('Informe a razão: '))
 for num in range(0, 10):
-    print(n)
+    print(n, end = ' ')
     n = n + 1 * r
+
+print('\nAcabou!')

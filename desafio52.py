@@ -2,13 +2,19 @@
 
 cont = 0 
 num = int(input('Informe um número inteiro para saber se é número primo: '))
-div = []
-for a in range(num):
-    if num%(a+1) == 0:
+# div = []
+for a in range(1, num + 1):
+    if num % a == 0:
+        print('\033[33m', end =' ')
         cont = cont + 1
-        div.append(a+1)
+        # div.append(a+1)
+    else:
+        print('\033[31m', end =' ')
+    print(f'{a}', end='')
 
-if cont == 2:
-    print (f'O numero é primo divisivel por {div}')
+print (f'\n\033[mO numero {num} foi divisível {cont} vezes.')
+
+if cont ==2:
+    print('Ele é PRIMO!')
 else:
-    print (f'O numero não é primo pois é divisivel por {div}')
+    print('Não é PRIMO!')

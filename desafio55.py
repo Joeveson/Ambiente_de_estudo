@@ -3,7 +3,7 @@
 menor_peso = 0
 maior_peso = 0
 for c in range(1, 6):
-    peso = float(input('Informe o peso: '))
+    peso = float(input(f'Informe o peso da {c}ª pessoa: '))
     if c == 1:
         maior_peso = peso
         menor_peso = peso
@@ -14,4 +14,4 @@ for c in range(1, 6):
         elif peso < menor_peso:
             menor_peso = peso
 
-print(f'O maior peso foi {maior_peso:.2f}kg e o menor peso foi {menor_peso:.2f}kg.')
+print(f'O maior peso foi {maior_peso:.1f}kg e o menor peso foi {menor_peso:.1f}kg.')
