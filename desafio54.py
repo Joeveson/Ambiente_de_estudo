@@ -2,13 +2,13 @@
 
 import datetime
 
-ano = datetime.date.today()
+ano = datetime.date.today().year
 menor_idade = 0
 maior_idade = 0
-print(f'O ano atual é {ano.year}')
+print(f'O ano atual é {ano}')
 for pessoa in range(1, 8):
     ano_nascimento = int(input(f'Informe a data de nascimento da {pessoa}ª pessoa: '))
-    idade_atual = ano.year - ano_nascimento
+    idade_atual = ano - ano_nascimento
     if idade_atual > 21:
         # print(f'Você é maior de idade {idade_atual} anos.')
         maior_idade = maior_idade + 1
