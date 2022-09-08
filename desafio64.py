@@ -9,7 +9,9 @@ cont_n = 0
 
 while n != 999:
     n = int (input('Informe um número: '))
-    cont = n + cont
-    cont_n = cont_n +1
 
+    if n != 999:
+        cont = n + cont
+        cont_n = cont_n +1
+        
 print(f'Foram informados {cont_n} números e a soma deles é {cont}.')
