@@ -2,49 +2,37 @@
 # No final da execução, mostre a média entre todos os valores e qual foi o maior e menor valores lidos. 
 # O programa deve perguntar ao usuário se ele quer ou não continuar a digitar os valores. 
 
-numero = int(input('INFORME UM NÚMERO: '))
-media = 0
-maior_valor = 0
-menor_valor = 0
-cont = 0
-menu = ('''VOCÊ DESEJA CONTINUAR?
-[1] SIM
-[2] NÃO
+menu = ('''Digite uma opção para continuar:
+[1] - SIM
+[2] - Não
 ''')
-print(menu)
-operacao = int(input('INFORME A OPÇÃO DESEJADA: '))
+n=1
+contagem = 0
+soma = 0
 
+while n != 2:
+    operacao = int(input('Informe um número inteiro: '))
 
-while operacao != 2:
-    if operacao > 2:
-        print('ERRO: DIGITE UMA OPÇÃO VÁLIDA.')
-        operacao = int(input('INFORME A OPÇÃO DESEJADA: '))
+    contagem = contagem +1
+    soma = soma + operacao
 
-    elif operacao <= 0:
-        print('ERRO: DIGITE UMA OPÇÃO VÁLIDA.')
-        operacao = int(input('INFORME A OPÇÃO DESEJADA: '))
-
+    if contagem == 1:
+        maior = operacao
+        menor = operacao
     else:
-        if operacao == 1:
-            new_operacao = int(input('INFORME UM NOVO NÚMERO: '))
-            numero = new_operacao
+        if operacao > maior:
+            maior = operacao
+
+        if operacao < menor:
+            menor = operacao
+    print(menu)
+    n = int(input('Informe a opção desejada: '))
+
+    while n != 2 and n != 1:
+        print('Opção inválida, digite um número válido.')
         print(menu)
-        operacao = int(input('INFORME A OPÇÃO DESEJADA: '))
+        n = int(input('Informe a opção desejada: '))
+        
 
-        if operacao ==2:
-            print('OPERAÇÃO ENCERRADA.')
-            if numero > numero:
-                maior_valor == numero
-
-            if numero < numero:
-                menor_valor == numero
-
-            else:
-                cont = cont +1
-                media = numero / cont
-
-
-
-print(f'A média dos valores é {media}')
-print(f'O maior valor é {maior_valor} e o menor valor é {menor_valor}')
-
+print(f'A média dos valores é {soma/contagem}.')
+print(f'O maior valor é {maior} e o menor valor é {menor}.')
