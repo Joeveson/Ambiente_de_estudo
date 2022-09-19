@@ -8,3 +8,4 @@ while sexo != 'F' and sexo != 'M':
         print('OPÇÃO ERRADA. DIGITE NOVAMENTE!')
     else:
        print('SEXO VALIDADO!')
+print(f'Sexo {sexo} registrado com sucesso.')

@@ -8,3 +8,5 @@ cont = n
 while cont <= num:
     print(cont)
     cont = cont + r
+
+print('FIM')

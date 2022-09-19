@@ -17,4 +17,4 @@ while mais_numero != 0:
         cont = cont + 1
     mais_numero = int(input('Quantos termos você quer mostrar a mais? '))
 
-print('FIM')
+print(f'FIM, foram digitados {cont} termos.')

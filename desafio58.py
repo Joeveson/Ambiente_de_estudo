@@ -2,9 +2,9 @@
 
 from random import randint
 
-print('-=-' * 22)
+print('\033[1;31m-=-\033[m' * 22)
 print('\033[1;31mCOMPUTADOR:\033[m VOU PENSAR EM UM NÚMERO ENTRE 0 E 10. TENTE ADIVINHAR!')
-print('-=-' * 22)
+print('\033[1;31m-=-\033[m' * 22)
  
 valor = randint(0,10)
 cont = 1
