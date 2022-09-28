@@ -4,22 +4,35 @@
 # C- Quantas mulheres tem menos de 20 anos.
 
 cont = 0
+hom = 0
+mul = 0
 while True:
     idade = int(input('Informe sua idade: '))
     print("""Informe seu sexo:  
+
     [F] = Feminino 
     [M] = Masculino
     """)
     sexo = str(input('Informe seu sexo: ').upper())
+    print("""Deseja continuar ?
+
+    [1] - SIM 
+    [2] - NÃO
+    """)
+    op = int(input('Informe a opção de desejada: '))
+    
     if idade > 18:
         cont = cont +1
-        print (f'Existe {cont} pessoa(s) com mais de 18 anos.')
-    
-    if sexo == 'H':
-        cont = cont +1
-        print (f'Foram cadastrados {cont} Homen(s).')
- 
+
     if sexo == 'M':
-        idade > 20
-        cont = cont +1
-        print (f'Existe {cont} mulhere(s) com menos de 20 anos.')
+            hom = hom +1
+ 
+    elif sexo == 'F':
+            idade < 20
+            mul = mul +1 
+
+    if op != 1:
+        print('Programa Encerrado.')
+        break
+
+print (f'Existe {cont} pessoa(s) com mais de 18 anos. \nForam cadastrados {hom} pessoa(s) do sexo Masculino. \nExiste {mul} pessoa(s) do sexo Feminino com menos de 20 anos.')
