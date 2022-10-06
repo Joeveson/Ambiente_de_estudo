@@ -6,7 +6,7 @@
 soma = 0
 cont_prod = 0
 prod_barato = ""
-cont_preco = 1
+# cont_preco = 1
 
 while True:
     nome_prod = str(input('Informe o nome do Produto: '))
