@@ -35,4 +35,4 @@ while True:
         if total == 0:
             break
 
-print ('Saque realizado com sucesso, volte sempre!')
+print ('\033[1;31mSaque realizado com sucesso, volte sempre!\033[m')
