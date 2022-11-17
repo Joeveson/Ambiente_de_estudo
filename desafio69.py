@@ -8,19 +8,23 @@ hom = 0
 mul = 0
 while True:
     idade = int(input('Informe sua idade: '))
-    print("""Informe seu sexo:  
+    sexo = ' '
+    while sexo not in 'FM':
+        print("""Informe seu sexo:  
 
-    [F] = Feminino 
-    [M] = Masculino
-    """)
-    sexo = str(input('Informe seu sexo: ').upper())
-    print("""Deseja continuar ?
+        [F] = Feminino 
+        [M] = Masculino
+        """)
+        sexo = str(input('Informe seu sexo: ').upper())
+    op = 0
+    while op != 1 and op != 2:
+        print("""Deseja continuar ?
 
-    [1] - SIM 
-    [2] - NÃO
-    """)
-    op = int(input('Informe a opção de desejada: '))
-    
+        [1] - SIM 
+        [2] - NÃO
+        """)
+        op = int(input('Informe a opção de desejada: '))
+        
     if idade > 18:
         cont = cont +1
 
