@@ -33,21 +33,29 @@ tabela = (
 for pos, time in enumerate (tabela):
     print (f'{pos+1}º {time}')
 
-print (f'\033[1;33m\nOs times Classificados para a Libertados são:\033[m')
-for time in tabela[0:6]:
+print('\033[1;31m-=-\033[m'*17)
+print (f'\033[1;33m\nOs times Classificados para a Libertados são:\n\033[m')
+print('\033[1;31m-=-\033[m'*17)
+for time in tabela[0:5]:
     print(time)
 
+print('\033[1;31m-=-\033[m'*17)
 print (f'\033[1;33m\nOs times rebaixados para séria B são:\n\033[m')
-for time in tabela [16:21]:
+print('\033[1;31m-=-\033[m'*17)
+for time in tabela [-4:]:
     print(time)
 
+print('\033[1;31m-=-\033[m'*17)
+print(f'\n\033[1;33mTimes em Ordem Alfabética:\n\033[m')
+print('\033[1;31m-=-\033[m'*17)
+for time in sorted (tabela):
+    print(time)
 
-
-time_escolha = str(input('Informe o nome do time para saber sua posição na tabela: '))
+time_escolha = str(input('\n\033[1;33mInforme o nome do time para saber sua posição na tabela: \033[m'))
 for pos, time in enumerate (tabela):
     if time_escolha not in tabela:
-        print('O time não está no Campeonato Brasileiro da Séria A - 2022')
+        print('\n\033[1;33mO time não está no Campeonato Brasileiro da Séria A - 2022\033[m')
         break
 
     if time == time_escolha: 
-        print(f'O time escolhido está na posição {pos+1}º')
+        print(f'\n\033[1;33mO time escolhido está na posição {pos+1}º\033[m')

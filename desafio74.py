@@ -24,5 +24,5 @@ for pos, i in enumerate (lista_valores):
         maior_num = i
 
 print(f'O maior número sorteado foi {maior_num}.')
-print(f'O menor número informado foi {menor_num}.')
+print(f'O menor número sorteado foi {menor_num}.')
 
