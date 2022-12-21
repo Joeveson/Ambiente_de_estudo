@@ -3,12 +3,26 @@
 
 # contagem = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
 
-extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze', 'Doze', 'Treze', 'Catorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
+# extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze', 'Doze', 'Treze', 'Catorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte')
 
-while True:
-    num = (int(input('Informe um número de 0 a 20: ')))
-    if 0 <= num <=20:
-        break
-    print('Tente novamente!')
+# while True:
+#     num = (int(input('Informe um número de 0 a 20: ')))
+#     if 0 <= num <=20:
+#         break
+#     print('Tente novamente!')
 
-print(f'O número por extenso informado pelo usuário foi \033[1;31m{extenso[num]}\033[m ')
+# print(f'O número por extenso informado pelo usuário foi \033[1;31m{extenso[num]}\033[m ')
+
+
+nota = int(input("Digite uma nota: "))
+
+if nota <= 30:
+    print("Reprovado")
+
+if nota <= 50:
+    print("Recuperacao")
+
+if nota >= 51:
+    print('Aprovado')
+
+print("fim.")

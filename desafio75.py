@@ -3,19 +3,21 @@
 # B) EM QUE POSIÇÃO FOI DIGITADO O PRIMEIRO VALOR 3. 
 # C) QUAIS FORAM OS NÚMEROS PARES.
 
-n1 = int(input('Informe o primeiro valor: '))
-n2 = int(input('Informe o segundo valor: '))
-n3 = int(input('Informe o terceiro valor: '))
-n4 = int(input('Informe o quarto valor: '))
+num = (int(input('Informe o primeiro valor: ')),
+       int(input('Informe o segundo valor: ')),
+       int(input('Informe o segundo valor: ')),
+       int(input('Informe o segundo valor: ')))
+
 cont = 1
 par = 0
-valores = (n1, n2, n3, n4)
 
-print (f'O valores informados foram: \n{valores}')
-print (f'O número 9 apareceu {valores.count(9)} vezes.')
-print (f'O valor três apareceu na posição {valores.index(3)+1}.')
-
-print ('Os números pares são:')
-for par in (valores):
+print (f'O valores informados foram: \n{num}')
+print (f'O número 9 apareceu {num.count(9)} vezes.')
+if 3 in num:
+    print (f'O valor três apareceu na posição {num.index(3)+1}.')
+else:
+    print (f'O valor 3 não foi digitado em nenhuma posição.')
+print ('Os números pares são: ', end='')
+for par in num:
     if par % 2 == 0:
-        print (par)
+        print(par, end=' ')

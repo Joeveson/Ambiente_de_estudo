@@ -11,3 +11,10 @@ for palavra in lista:
             print (f'{vogal} ' ,end='')
     
     print()
+
+for p in lista:
+    print(f'\nNa palavra {p.upper()} temos ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
+print()
